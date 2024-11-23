@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.employeemanagementsystem.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="./HelloController" spacing="10" alignment="TOP_CENTER">
+    <TableView fx:id="tableView" prefHeight="200" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name" />
+            <TableColumn fx:id="typeColumn" text="Type" />
+            <TableColumn fx:id="salaryColumn" text="Salary" />
+        </columns>
+    </TableView>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <TextField fx:id="nameField" promptText="Name" />
+    <ComboBox fx:id="typeBox" promptText="Type" />
+    <TextField fx:id="salaryOrRateField" promptText="Annual Salary or Hourly Rate" />
+    <TextField fx:id="hoursField" promptText="Hours Worked / Max Hours" />
+
+    <Button text="Add Employee" onAction="#addEmployee" />
 </VBox>
