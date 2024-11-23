@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="./HelloController" spacing="10" alignment="TOP_CENTER">
+      fx:controller="org.example.employeemanagementsystem.HelloController" spacing="10" alignment="TOP_CENTER">
     <TableView fx:id="tableView" prefHeight="200" prefWidth="600">
         <columns>
             <TableColumn fx:id="nameColumn" text="Name" />
