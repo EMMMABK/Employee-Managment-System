@@ -57,12 +57,12 @@ The system allows users to:
 
 Here are screenshots showcasing the GUI of the **Employee Management System**:
 
-![Employee](./assets/employee1.png)
+![Employee](./assets/employee1.jpg)
 ![Employee](./assets/employee2.png)
 ![Employee](./assets/employee3.png)
 ![Employee](./assets/employee4.png)
-![Employee](./assets/employee5.png)
-![Employee](./assets/employee6.png)
+![Employee](./assets/employee5.jpg)
+![Employee](./assets/employee6.jpg)
 
 (You can replace these links with your own screenshots.)
 
