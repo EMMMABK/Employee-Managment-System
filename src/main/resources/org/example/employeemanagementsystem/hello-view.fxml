@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.employeemanagementsystem.HelloController" spacing="10" alignment="TOP_CENTER">
-    <TableView fx:id="tableView" prefHeight="200" prefWidth="600">
-        <columns>
-            <TableColumn fx:id="nameColumn" text="Name" />
-            <TableColumn fx:id="typeColumn" text="Type" />
-            <TableColumn fx:id="salaryColumn" text="Salary" />
-        </columns>
-    </TableView>
-
-    <TextField fx:id="nameField" promptText="Name" />
-    <ComboBox fx:id="typeBox" promptText="Type" />
-    <TextField fx:id="salaryOrRateField" promptText="Annual Salary or Hourly Rate" />
-    <TextField fx:id="hoursField" promptText="Hours Worked / Max Hours" />
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.employeemanagementsystem.HelloController" spacing="10" alignment="CENTER">
+    <TextField fx:id="nameTextField" promptText="Employee Name" />
+    <ComboBox fx:id="typeComboBox" promptText="Employee Type" />
+    <TextField fx:id="salaryTextField" promptText="Salary (Full-Time)" />
+    <TextField fx:id="hoursWorkedTextField" promptText="Hours Worked (Part-Time)" />
+    <TextField fx:id="hourlyRateTextField" promptText="Hourly Rate" />
+    <TextField fx:id="maxHoursTextField" promptText="Max Hours (Contractor)" />
 
     <Button text="Add Employee" onAction="#addEmployee" />
+
+    <TableView fx:id="employeeTable" prefWidth="600.0" prefHeight="400.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Employee Name" prefWidth="150.0"/>
+            <TableColumn fx:id="typeColumn" text="Employee Type" prefWidth="150.0"/>
+            <TableColumn fx:id="salaryColumn" text="Salary" prefWidth="150.0"/>
+            <TableColumn fx:id="removeColumn" text="Remove" prefWidth="100.0"/>
+        </columns>
+    </TableView>
 </VBox>
