@@ -89,7 +89,3 @@ Here are some sample inputs for each type of employee:
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can customize and add your own screenshots, sample inputs, or other relevant details.
